@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="An AI-powered functions learning lab with three levels of mathematical support.">
+<title>FunctionLab | AI Math Differentiator</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">ƒ</span> Function<span>Lab</span></a><div class="course-tag">MATH • LEARNING LAB</div></header>
+<main class="shell">
+<section class="hero"><div class="eyebrow"><span class="dot"></span> AI-POWERED DIFFERENTIATED LEARNING</div>
+<h1>Functions, at <em>your pace.</em></h1><p class="hero-copy">One mathematical idea. Three ways to learn it. Choose your level and let your AI tutor adapt the challenge, hints, and explanation to you.</p>
+<div class="hero-stats"><div><strong>01</strong><span>Core concept</span></div><div><strong>03</strong><span>Learning levels</span></div><div><strong>AI</strong><span>Personal guidance</span></div></div></section>
+<section class="workspace">
+<div class="section-heading"><div><div class="eyebrow muted">YOUR LEARNING PATH</div><h2>Choose your challenge</h2></div><span class="pill">Topic: Functions</span></div>
+<div class="levels" role="group" aria-label="Choose difficulty">
+<button class="level-card active" data-level="foundation"><span class="level-number">01 / START</span><span class="level-icon">◌</span><strong>Foundation</strong><span class="level-desc">Build confidence with guided steps and direct hints.</span><span class="level-foot">STEP-BY-STEP <span>↗</span></span></button>
+<button class="level-card" data-level="standard"><span class="level-number">02 / PRACTISE</span><span class="level-icon">⌁</span><strong>Standard</strong><span class="level-desc">Solve a grade-level problem independently, then check your thinking.</span><span class="level-foot">CORE SKILLS <span>↗</span></span></button>
+<button class="level-card" data-level="advanced"><span class="level-number">03 / EXTEND</span><span class="level-icon">✳</span><strong>Advanced</strong><span class="level-desc">Connect function rules to a multi-step real-world situation.</span><span class="level-foot">GO FURTHER <span>↗</span></span></button>
+</div>
+<div class="lesson-grid">
+<article class="problem-panel">
+<div class="panel-top"><span class="panel-label">TODAY'S CHALLENGE</span><span id="levelBadge" class="level-badge">FOUNDATION</span></div>
+<h3 id="problemTitle">Understand the function rule</h3><p id="problemText" class="problem-text">A function is a rule that gives exactly one output for each input. For f(x) = 2x + 3, find f(4).</p>
+<div class="input-row"><label for="answerInput">YOUR ANSWER</label><div class="answer-controls"><input id="answerInput" type="text" placeholder="Type your answer…" autocomplete="off"><button id="checkBtn" class="primary-btn">Check answer <span>→</span></button></div></div>
+<div id="feedback" class="feedback" aria-live="polite"></div>
+<div class="action-row"><button id="hintBtn" class="secondary-btn">✦ Get a hint</button><button id="solutionBtn" class="text-btn">Show solution</button><button id="newBtn" class="text-btn">New example ↻</button></div>
+<div id="supportBox" class="support-box hidden"><div class="support-title" id="supportTitle">AI tutor</div><div id="supportContent"></div></div>
+</article>
+<aside class="tutor-panel"><div class="tutor-header"><div class="avatar">ƒ</div><div><strong>Your AI tutor</strong><span><i></i> Ready to help</span></div></div>
+<p class="tutor-intro">No pressure. Ask for a hint before the answer, or request a clear explanation after you try.</p>
+<div class="tutor-note"><span class="note-icon">✦</span><div><strong>Learning tip</strong><p>Try substituting the input value for every x in the rule. Work one step at a time.</p></div></div>
+<label class="ask-label" for="questionInput">ASK A QUESTION</label><textarea id="questionInput" rows="3" placeholder="e.g. Why do we replace x with 4?"></textarea><button id="askBtn" class="ask-btn">Ask the AI tutor <span>↗</span></button>
+<div class="ai-status" id="aiStatus">AI service: checking connection…</div>
+</aside>
+</div>
+</section>
+<section class="concept-strip"><div class="concept-symbol">f(x)</div><div><span class="eyebrow muted">REMEMBER</span><h3>A function maps an input to exactly one output.</h3><p>For example, if f(x) = 2x + 3, then f(4) = 2(4) + 3 = 11.</p></div></section>
+<footer><span>FunctionLab · Educational Technology & AI</span><span>AI-generated guidance can make mistakes. Check each mathematical step.</span></footer>
+</main><script src="script.js"></script>
+</body></html>
